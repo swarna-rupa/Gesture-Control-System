@@ -680,7 +680,7 @@
                 <li><strong>Media Mode</span> - Volume and brightness control</li>
             </ul>
             <p style="margin-top: 1.5rem; color: var(--gray); font-size: 0.9rem;">
-                <i class="fas fa-exchange-alt"></i> Switch modes with a fist gesture or by pressing 'M'
+                <i class="fas fa-exchange-alt"></i> Switch modes with a left hand 2 finger gesture or by pressing 'M'
             </p>
         </div>
     </div>
@@ -756,17 +756,7 @@
                 });
             }
 
-            // Update download count (simulated)
-            const downloadCount = Math.floor(Math.random() * 5000) + 1000;
-            const downloadElement = document.createElement('div');
-            downloadElement.className = 'stat-item';
-            downloadElement.innerHTML = `
-                <span class="stat-number">${downloadCount.toLocaleString()}+</span>
-                <span class="stat-label">Downloads</span>
-            `;
-            document.querySelector('.stats').appendChild(downloadElement);
-        });
-
+           
         // Add scroll effect to header
         window.addEventListener('scroll', function() {
             const header = document.querySelector('header');
